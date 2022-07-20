@@ -2,11 +2,8 @@ import React from 'react'
 
 const Dashborad = () => {
   return (
-    <div>Dashborad
-
-
-
-    
+    <div>
+      <h1>Dashboard</h1>
     </div>
   )
 }
