@@ -1,13 +1,75 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif,"National 2", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", 游ゴシック, 游ゴシック体, YuGothic, "Yu Gothic", "ＭＳ ゴシック", "MS Gothic", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: National 2,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Homepage css */
+
+.wrapper{
+
+display:flex;
+justify-content: center;
+align-items: center;
+
+box-sizing:border-box;
+padding-top: 128px !important;
+   /* padding-bottom: 128px !important */
+}
+.wrapper .dynamic-txt{
+  line-height:90px;
+  height: 90px;
+  overflow: hidden;
+}
+ .dynamic-txt li{
+  color: #333e48 !important;
+list-style: none;
+font-size: 56px;
+font-weight: 500;
+top: 0;
+position: relative;
+animation: slide 12s steps(4) infinite;
+ }
+ @keyframes slide{
+  100%{
+    top:-360px
+  }
+ }
+
+.dynamic-txt li{
+  position: relative;
+}
+
+.dynamic-txt li::after{
+  content:"";
+  position:absolute;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-left: 5px solid green;
+  animation:typing 3s steps(40) infinite;
+}
+
+@keyFrames typing{
+  30%,
+  50%{
+    left:calc(100% + 30px);
+  }
+  100%{
+    left:0;
+  }
+}
+.global-text{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333e48 !important;
+  font-weight: 500;
 }
