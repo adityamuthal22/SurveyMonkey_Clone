@@ -2,6 +2,7 @@ import { Box,Text,Button,Image,Link } from '@chakra-ui/react'
 import React from 'react'
 
 import styles from "../styles/Home.module.css";
+import Footer from './Footer';
 import Navbar1 from './Navbar1'
 
 
@@ -160,7 +161,7 @@ const Homepage = () => {
          
          {/* feedback */}
 
-         <Box>
+         <Box backgroundColor={'#f7f8fa'}>
          <Box marginTop={'100px'} width={'50%'} textAlign={'center'}  marginLeft={'350px'}>
             <Text className={styles.plan_works} textAlign={'center'}>
             Go beyond collecting feedback—deliver 
@@ -199,7 +200,50 @@ const Homepage = () => {
 
           </Box>
          </Box>
+         {/* Still curious? */}
+         <Box marginTop={'100px'}>
+            <Text className={styles.plan_works}>
+            Still curious?
+            </Text>
+          </Box>
+          <Box marginTop={'20px'}>
+            <Text textAlign={'center'} className={styles.text2}>
+            Explore these additional resources to help you launch successful survey <br/> projects.
+            </Text>
+          </Box>
 
+
+      <Box  className={styles.tool_kit}>
+        <Box className={styles.small_1}>
+          <Image src="https://prod.smassets.net/assets/cms/sm/uploads//golden-state-warriors.png"></Image>
+          <Text className={styles.adi_tool_text} >Success Stories</Text>
+          <Text className={styles.adi_tool_text2}>Read about our customers, explore our webinars, and get guides on collecting feedback in your industry.</Text>
+          <Box className={styles.adi_link_1}><Link >Explore resources</Link></Box>
+        </Box>
+        <Box className={styles.small_1}>
+          <Image src="https://prod.smassets.net/assets/cms/sm/uploads//blog-tile-card.png"></Image>
+          <Text className={styles.adi_tool_text} >Blog</Text>
+          <Text className={styles.adi_tool_text2}>Get tips on how to create better surveys, hear the latest product news, or check out our signature research.</Text>
+          <Box className={styles.adi_link_1}><Link >See Curiosity at Work</Link></Box>
+
+        </Box>
+        <Box className={styles.small_1}>
+          <Image src="https://prod.smassets.net/assets/cms/sm/uploads//help-center-tile.png"></Image>
+          <Text className={styles.adi_tool_text} >Help Center</Text>
+          <Text className={styles.adi_tool_text2}>Access tutorials on how features work, learn more about billing, contact Customer Support, and more.</Text>
+          <Box className={styles.adi_link_1}><Link >Visit Help Center</Link></Box>
+
+        </Box>
+      </Box>
+
+      <Box className={styles.Net_p}>
+        <Text>Net Promoter, Net Promoter System, Net Promoter Score, NPS and the NPS-related emoticons are registered <br /> trademarks of Bain & Company, Inc., Fred Reichheld and Satmetrix Systems, Inc.</Text>
+      </Box>
+
+      {/* Footer section */}
+      <Box>
+        <Footer />
+      </Box>
     </div>
   )
 }
