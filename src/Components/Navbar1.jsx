@@ -8,6 +8,10 @@ const Navbar1 = () => {
   function handleLogin(){
     navigate("/Login")
   }
+
+  function handleSignup(){
+    navigate("/Signup")
+  }
   return (
     <Box>
         <div style={{display:"flex",
@@ -243,7 +247,7 @@ const Navbar1 = () => {
           
             <Button _hover="none" backgroundColor="white" onClick={handleLogin}>Log in</Button>
           
-            <Button backgroundColor="#f9be00">Sign up free</Button>
+            <Button backgroundColor="#f9be00" onClick={handleSignup}>Sign up free</Button>
         </Box>
         </div>
     </Box>
