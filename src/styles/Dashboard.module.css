@@ -1,0 +1,58 @@
+.username{
+    display:flex;
+    margin-left: 20px;
+    font-size: 24px;
+    padding: 0px;
+    margin-top: 20px;
+    color: #333E48;
+    outline: none;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.accordion1{
+    width: 52%;
+    margin: auto;
+    outline: none;
+    text-decoration: none;
+    border-top: none;
+    border-bottom: none;
+}
+.checkbox1{
+    height: 20px;
+    width: 250px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    padding: 0 0 0 32px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #333E48;
+    margin-bottom: 25px;
+    /* border: 1px solid red; */
+}
+.get_start{
+    text-align: center;
+    font-size: 24px;
+    color: #333E48;
+    font-weight: 300;
+    /* margin-top: 100px; */
+
+}
+.create_but{
+  background-color: #00b159 ;
+   color: white;
+   text-align: center;
+   display: flex;
+   align-items: center;
+  justify-content: center;
+  margin-left: 44%;
+  margin-top: 20px;
+}
+.next_but{
+    padding: 5px 40px;
+    border: 1px solid #00b159;
+    margin-left: 35%;
+    font-size: 12px;
+    color: #00b159;
+    font-weight: 500;
+}

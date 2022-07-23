@@ -24,7 +24,7 @@ import Dashborad from './Dashborad';
     
     const navigate=useNavigate()
     function handleSignup(){
-      navigate("/Signup")
+      navigate("/signup")
     }
 
       function handleLogin(e){
