@@ -30,10 +30,38 @@ border-radius: 5px;
 font-weight: 500;
 }
 .butnav3{
-    background-color: white;
-    padding: 1px;
-    height: 30px;
+    background-color: white;  
     border-radius: 5px;
     font-weight: 500;
-    margin-left: -10px;
+    /* margin-left: -10px; */
+ }
+ .drawerPro{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 28px;
+    box-sizing: border-box;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+   
+ }
+ .ul_style{
+    text-decoration:none ;
+    list-style: none;
+    font-size: 16px;
+    color: var(--mm-theme-color-contrast);
+    padding: 10px;
+    outline: none;
+ }
+ .ul_style li{
+    margin-top: 30px;
+ }
+ .ul_style :hover{
+    background-color: rgb(240, 234, 234);
+ }
+ .ul_style li :hover{
+   
+    outline: 0 !important;
+    text-decoration: none !important;
  }

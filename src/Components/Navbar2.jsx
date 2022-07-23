@@ -1,9 +1,18 @@
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Image, Input, Link, Menu, MenuButton, MenuItem, MenuList, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Drawer,  DrawerCloseButton, DrawerContent, DrawerOverlay, Image,  Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
 import {ChevronDownIcon} from "@chakra-ui/icons"
 import styles from "../styles/Navbar2.module.css"
+import { isAuth } from './IsAuth'
+import { useNavigate } from 'react-router'
 
 const Navbar2 = () => {
+  const username=isAuth()
+const navigate =useNavigate();
+
+function handleSignout(){
+  navigate("/")
+}
+
   return (
     <div>
         <Box className={styles.Navbar2box}>
@@ -17,20 +26,18 @@ const Navbar2 = () => {
            </Box>
            <Box className={styles.Nav_first}>
             <button className={styles.butnav2}>Upgrade</button>
-            <button className={styles.butnav3}>Create Survey</button>
-       
             <Grid />
             <Help />
             <Box>
             <Menu>
-                <MenuButton  backgroundColor={'#3f3b33'}  height={'30px'}  color={'white'} _hover={'none'} _focus={'none'} as={Button} rightIcon={<ChevronDownIcon />}>
-                    adityamuthal.2208@gmail.com
+                <MenuButton  marginLeft={'90px'} backgroundColor={'#3f3b33'}  height={'30px'}  color={'white'} _hover={'none'} _focus={'none'} as={Button} rightIcon={<ChevronDownIcon />}>
+                    {username}
                 </MenuButton>
                 <MenuList marginLeft={'60px'} fontWeight={"500"}>
                     <MenuItem fontWeight={"500"}>My Account</MenuItem>
                     <MenuItem fontWeight={"500"}>Library</MenuItem>
                     <MenuItem fontWeight={"500"}>Contact</MenuItem>
-                    <MenuItem fontWeight={"500"}>Sign Out</MenuItem>
+                    <MenuItem fontWeight={"500"} onClick={handleSignout}>Sign Out</MenuItem>
                 </MenuList>
                 </Menu>
             </Box>
@@ -60,20 +67,57 @@ function Grid() {
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent>
+          <DrawerContent overflowY={'scroll'}>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+          <Text className={styles.drawerPro}>Products</Text>
+          <ul className={styles.ul_style}>
+           <li>
+            <Link>
+            <Text>Enterprise</Text>
+            <Text>Get more security & control over your survey data</Text>
+           </Link>
+           </li>
+           <li>
+            <Link>
+            <Text>Audience</Text>
+            <Text>Collect survey responses from our global consumer panel</Text>
+            </Link>
+            </li>
+           <li>
+            <Link>
+            <Text>Integration & Plug-ins</Text>
+            <Text>Easily connect survey data to existing business systems</Text>
+            </Link>
+            </li>
+           <li><Link>
+           <Text>CX</Text>
+            <Text>Understand & improve customer experience(NPS)</Text>
+           </Link></li>
+           <li><Link>
+           <Text>Engage</Text>
+            <Text>Understand & increase employee engagement</Text>
+           </Link></li>
+           <li><Link>
+           <Text>TechValidate</Text>
+            <Text>Capture & transform customer feedback into case studies</Text>
+           </Link></li>
+           <li><Link>
+           <Text>Wuffo</Text>
+            <Text>Gather data & payments with online forms</Text>
+           </Link></li>
+           <li><Link>
+           <Text>Apply</Text>
+            <Text>Collect,review & manage application online</Text>
+           </Link></li>
+           <li><Link>
+           <Text>GetFeedback</Text>
+            <Text>Customer feedback for Salesforce</Text>
+           </Link></li>
+
+          </ul>
+           
   
-            <DrawerBody>
-              <Input placeholder='Type here...' />
-            </DrawerBody>
-  
-            <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
-            </DrawerFooter>
+            
           </DrawerContent>
         </Drawer>
       </>
@@ -98,20 +142,31 @@ function Grid() {
           finalFocusRef={btnRef}
         >
           <DrawerOverlay />
-          <DrawerContent>
+          <DrawerContent >
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
-  
-            <DrawerBody>
-              <Input placeholder='Type here...' />
-            </DrawerBody>
-  
-            <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
-            </DrawerFooter>
+          <Text className={styles.drawerPro}>Help</Text>
+          <ul className={styles.ul_style}>
+           <li>
+            <Link>
+            <Text>Help Center</Text>
+            <Text>Find quick answers to your questions</Text>
+           </Link>
+           </li>
+           <li>
+            <Link>
+            <Text>Resource</Text>
+            <Text>Templates,best practices , case studies and more</Text>
+            </Link>
+            </li>
+           <li>
+            <Link>
+            <Text>Curiosity at Work</Text>
+            <Text>Get inspiration on our blog</Text>
+            </Link>
+            </li>
+          
+
+          </ul>
           </DrawerContent>
         </Drawer>
       </>
