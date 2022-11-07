@@ -1,76 +1,38 @@
-<<<<<<< HEAD
-# -sulky-badge-1883
-=======
-//create commit
+# Project-SurveyMonkey
+Hi World !🌏
+I am students of Masai School from Web17 batch and we presenting our project- clone of SurveyMonkey.com, This is 
+individual Project and built during construct week of Unit-4.
 
-# Getting Started with Create React App
+# Details : 🔭
+SurveyMonkey is a cloud-based survey tool that helps users create, send and analyze surveys.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ 🚀 The link for the same is here : https://survey-monkey-jx4d0956z-adityamuthal2208-gmailcom.vercel.app
 
-In the project directory, you can run:
+### Pages & Features 👇
 
-### `npm start`
+- `Home Page`: Nav Bar with drop downs, many surveys offer and using tool and Footer section.
+- `Login/Signup`: User authentication to check whether user email and password match with details existing in the database.
+- `DashBoard Page`: In this Page another navbar, many Drower option using Chakra-ui, Survey Examples,  footer Section and Signout functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=for-the-badge&logo=HTML5)
+- ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=for-the-badge&logo=CSS3)
+- ![ReactJs](https://img.shields.io/badge/-Reactjs-000000?style=for-the-badge&logo=ReactJs) 
+- ![Chakra](https://img.shields.io/badge/-Chakra-000000?style=for-the-badge&logo=Chakra) 
+- (DOM Manipulation, Local Storage)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Learning :-
 
-### `npm run build`
+- Our code writing style became cleaner as we had used ES6 to write code and used import export so that code become well structured.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- I learn about many CSS properties that we didn't know before.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Our skills in React became better.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Learned how to use Chakra-ui Tool.
 
-### `npm run eject`
+- I learned how to plan a project and execute that in a limited time frame.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 9a1d46448ce81a8bae352f4190950a1d4b4027e6
